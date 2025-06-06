@@ -7,4 +7,10 @@ app.get("/main" , (req , res)=>{
                 msge:'deployement succesfull'
         })
 })
-module.exports = app
+
+
+
+app.get("/", (req, res) => {res.send("Express on Vercel")});
+
+// Don't call app.listen() yourself
+module.exports =app
