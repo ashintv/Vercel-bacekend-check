@@ -13,6 +13,5 @@ app.get("/main" , (req , res)=>{
 app.get("/", (req, res) => {res.send("Express on Vercel")});
 
 // Don't call app.listen() yourself
-
+module.exports = app
 app.listen(3000)
-module.exports =app
